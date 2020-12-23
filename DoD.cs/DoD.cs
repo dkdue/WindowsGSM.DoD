@@ -17,7 +17,7 @@ namespace WindowsGSM.Plugins
         {
             name = "WindowsGSM.DoD", // WindowsGSM.XXXX
             author = "kessef",
-            description = "WindowsGSM plugin for supporting Day of Dragon Dedicated Server",
+            description = "WindowsGSM plugin for supporting Day of Dragons Dedicated Server",
             version = "1.0",
             url = "https://github.com/dkdue/WindowsGSM.DoD", // Github repository link (Best practice)
             color = "#34c9eb" // Color Hex
@@ -34,8 +34,8 @@ namespace WindowsGSM.Plugins
 
 
         // - Game server Fixed variables
-        public override string StartPath => @"WindowsServer\BeastsOfBermuda\Binaries\Win64\BeastsOfBermudaServer.exe"; // Game server start path
-        public string FullName = "Beasts of Bermuda Dedicated Server"; // Game server FullName
+        public override string StartPath => @"Dragons\Binaries\Win64\DragonsServer-Win64-Shipping.exe"; // Game server start path
+        public string FullName = "Day of Dragons Dedicated Server"; // Game server FullName
         public bool AllowsEmbedConsole = true;  // Does this server support output redirect?
         public int PortIncrements = 1; // This tells WindowsGSM how many ports should skip after installation
         public object QueryMethod = new A2S(); // Query method should be use on current server type. Accepted value: null or new A2S() or new FIVEM() or new UT3()
@@ -44,9 +44,9 @@ namespace WindowsGSM.Plugins
         // - Game server default values
         public string Port = "7777"; // Default port
         public string QueryPort = "27020"; // Default query port
-        public string Defaultmap = "Forest_Island"; // Default map name
-        public string Maxplayers = "32"; // Default maxplayers
-        public string Additional = "-SteamServerName="ServerName""; // Additional server start parameter
+        public string Defaultmap = "D_World"; // Default map name
+        public string Maxplayers = "100"; // Default maxplayers
+        public string Additional = "-SteamServerName=ServerName"; // Additional server start parameter
 
 
         // - Create a default cfg for the game server after installation
@@ -164,7 +164,7 @@ namespace WindowsGSM.Plugins
             {
                 using (WebClient webClient = new WebClient())
                 {
-                    await webClient.DownloadFileTaskAsync($"https://raw.githubusercontent.com/dkdue/WindowsGSM-Configs/main/BoB/Game.ini", filePath);
+                    await webClient.DownloadFileTaskAsync($"https://raw.githubusercontent.com/dkdue/WindowsGSM-Configs/main/DoD/Game.ini", filePath);
                 }
             }
             catch (Exception e)
