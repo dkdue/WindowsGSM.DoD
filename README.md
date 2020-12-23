@@ -1,2 +1,2 @@
 # WindowsGSM.DoD
-🧩WindowsGSM plugin that provides Day of Dragon Dedicated server support!
+🧩WindowsGSM plugin that provides Day of Dragons Dedicated server support!
