@@ -1,2 +1,2 @@
 # WindowsGSM.DoD
-🧩WindowsGSM plugin that provides Red Dead Redemption 2 Dedicated server support!
+🧩WindowsGSM plugin that provides Day of Dragon Dedicated server support!
