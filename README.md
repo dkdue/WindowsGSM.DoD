@@ -1,6 +1,9 @@
 # WindowsGSM.DoD
 🧩WindowsGSM plugin that provides Day of Dragons Dedicated server support!
 
+# The Game
+https://store.steampowered.com/app/1088090/Day_of_Dragons/
+
 # Requirements
 WindowsGSM >= 1.21.0
 
